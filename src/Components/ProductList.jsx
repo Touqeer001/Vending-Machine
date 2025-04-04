@@ -1,8 +1,8 @@
-
-import React, { useState } from "react";
+import React, { useContext } from "react";
+import { ProductContext } from "../ContextApi/ProductContext";
 
 const ProductList = ({ products, setMessage }) => {
-  const [selectedProduct, setSelectedProduct] = useState(null);
+  const { setSelectedProduct } = useContext(ProductContext);
 
   const handleSelectProduct = (product) => {
     setSelectedProduct(product);
