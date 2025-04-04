@@ -1,17 +1,23 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
+import { ProductContext } from "../ContextApi/ProductContext";
 
-const Refund = ({ setMessage }) => {
-  const [insertedMoney, setInsertedMoney] = useState(0);
+const Refund = ({ insertedMoney, setInsertedMoney, setMessage }) => {
+  const { setSelectedProduct } = useContext(ProductContext);
 
   const handleRefund = () => {
-    setMessage(`Refunded ₹${insertedMoney}`);
-    setInsertedMoney(0);
+    if (insertedMoney > 0) {
+      setMessage(`Refunded ₹${insertedMoney}.`);
+      setInsertedMoney(0);
+      setSelectedProduct(null);
+    } else {
+      setMessage("No money inserted to refund.");
+    }
   };
 
   return (
     <div>
       <h2>Refund</h2>
-      <button onClick={handleRefund}>Refund Money</button>
+      <button onClick={handleRefund}>Cancel & Refund</button>
     </div>
   );
 };
