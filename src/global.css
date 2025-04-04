@@ -1,0 +1,39 @@
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: Dark Blue;
+  }
+  
+  .btn:active {
+    background-color: Dark Blue;
+  }
+  
+
+  .msg {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 500;
+border-radius: 6px;
+    max-width: 80%;
+    word-wrap: break-word;
+    background-color: #ffc107; 
+  }
+  
+ 
+  
+  
