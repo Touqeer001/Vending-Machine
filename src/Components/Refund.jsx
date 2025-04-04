@@ -10,14 +10,14 @@ const Refund = ({ insertedMoney, setInsertedMoney, setMessage }) => {
       setInsertedMoney(0);
       setSelectedProduct(null);
     } else {
-      setMessage("No money inserted to refund.");
+      setMessage("No money added .");
     }
   };
 
   return (
     <div>
       <h2>Refund</h2>
-      <button onClick={handleRefund}>Cancel & Refund</button>
+      <button className="btn" onClick={handleRefund}>Cancel & Refund</button>
     </div>
   );
 };
