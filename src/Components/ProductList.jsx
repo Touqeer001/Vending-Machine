@@ -1,10 +1,11 @@
 import React, { useContext } from "react";
 import { ProductContext } from "../ContextApi/ProductContext";
+import "../global.css"
 
 const ProductList = ({ products, setMessage }) => {
   const { setSelectedProduct } = useContext(ProductContext);
 
-  const handleSelectProduct = (product) => {
+  const handleClick = (product) => {
     setSelectedProduct(product);
     setMessage(`You selected ${product.name}. Insert ₹${product.price}.`);
   };
@@ -13,7 +14,7 @@ const ProductList = ({ products, setMessage }) => {
     <div>
       <h2>Products</h2>
       {products.map((product) => (
-        <button key={product.id} onClick={() => handleSelectProduct(product)}>
+        <button className="btn" key={product.id} onClick={() => handleClick(product)}>
           {product.name} - ₹{product.price}
         </button>
       ))}
