@@ -36,13 +36,14 @@ const InsertMoney = ({ insertedMoney, setInsertedMoney, setMessage }) => {
   return (
     <div>
       <h2>Insert Money</h2>
-      <button onClick={() => handleInsertMoney(1)}> ₹1</button>
-      <button onClick={() => handleInsertMoney(2)}> ₹2</button>
-      <button onClick={() => handleInsertMoney(5)}> ₹5</button>
-      <button onClick={() => handleInsertMoney(10)}> ₹10</button>
-      <button onClick={() => handleInsertMoney(20)}> ₹20</button>
-      <button onClick={() => handleInsertMoney(50)}> ₹50</button>
-      <button onClick={() => handleInsertMoney(100)}> ₹100</button>
+      
+      <button className="btn" onClick={() => handleInsertMoney(1)}> ₹1</button>
+      <button className="btn" onClick={() => handleInsertMoney(2)}> ₹2</button>
+      <button  className="btn" onClick={() => handleInsertMoney(5)}> ₹5</button>
+      <button className="btn" onClick={() => handleInsertMoney(10)}> ₹10</button>
+      <button className="btn" onClick={() => handleInsertMoney(20)}> ₹20</button>
+      <button className="btn"  onClick={() => handleInsertMoney(50)}> ₹50</button>
+      <button className="btn" onClick={() => handleInsertMoney(100)}> ₹100</button>
     </div>
   );
 };
