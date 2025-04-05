@@ -1,5 +1,11 @@
 <h1 align="center"> Vending Machine</h1> 
 
+## Demo
+
+[Check here to see the project](https://online-lecture-scheduling-wep-app.netlify.app)
+
+The project repository can be found in [GitHub link](https://github.com/Touqeer001/Vending-Machine.git) 
+
 ## Project Overview
 
 1. **App.js (Parent Component)**
