@@ -2,7 +2,6 @@
 
 ## Demo
 
-[Check here to see the project](https://online-lecture-scheduling-wep-app.netlify.app)
 
 The project repository can be found in [GitHub link](https://github.com/Touqeer001/Vending-Machine.git) 
 
